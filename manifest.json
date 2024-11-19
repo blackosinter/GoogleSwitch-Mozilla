@@ -1,0 +1,18 @@
+{
+    "manifest_version": 2,
+    "name": "Googlewitch",
+    "version": "1.0",
+  
+    "description": "This extension simplifies changing language and country settings for Google Search and Google Lens.",
+
+    "content_scripts": [
+      {
+        "matches": ["https://www.google.com/*"],
+        "js": ["contentSearch.js"]
+      },
+      {
+        "matches": ["https://lens.google.com/*"],
+        "js": ["contentLens.js"]
+      }
+    ]
+  }
