@@ -5,6 +5,18 @@
   
     "description": "This extension simplifies changing language and country settings for Google Search and Google Lens.",
 
+    "icons": {
+    "16": "icons/16.png",
+    "48": "icons/48.png",
+    "128": "icons/128.png"
+  },
+  "browser_action": {
+    "default_icon": {
+      "16": "icons/16.png",
+      "48": "icons/48.png",
+      "128": "icons/128.png"
+    }},
+
     "content_scripts": [
       {
         "matches": ["https://www.google.com/*"],
@@ -14,5 +26,11 @@
         "matches": ["https://lens.google.com/*"],
         "js": ["contentLens.js"]
       }
+    ],
+    "web_accessible_resources": [
+      "icons/16.png",
+      "icons/48.png",
+      "icons/128.png",
+      "icons/192.png"
     ]
   }
