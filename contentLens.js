@@ -69,7 +69,7 @@ function main() {
 
   getCoordinates(isExotic)
 
-  window.addEventListener("resize", getCoordinates(isExotic));
+  window.addEventListener("resize", () => getCoordinates(isExotic));
 
 
   // Function to create a search input with autocomplete
